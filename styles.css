@@ -1,0 +1,357 @@
+body {
+  font-family: "Spicy Rice", serif;
+  margin-top: 56px;
+  /* Adjust this value if your navbar height changes */
+  overflow-x: hidden;
+  cursor: url("assets/Bini Cursor.png"), auto;
+  /* Custom cursor for links */
+}
+
+.navbar {
+  background: linear-gradient(rgb(78, 74, 74), rgb(161, 150, 150)),
+    url("assets/Bini Navbar.png") no-repeat;
+  /* Replace with the path to your image */
+  background-size: cover;
+  background-position: 60% 20%;
+  background-blend-mode: lighten;
+  /* Blend the gradient with the image */
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  /* Center the navbar contents */
+}
+
+.navbar-nav.ms-auto {
+  margin-right: 20px;
+  /* Ensure icons are on the far right */
+}
+
+.nav-link {
+  color: black !important;
+  /* Black font color */
+  font-weight: bold;
+  /* Bold font */
+  padding: 0 20px;
+  /* Adjust the space between links */
+  font-size: 18px;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  /* White text outline */
+  cursor: url("assets/Bini Cursor.png"), auto;
+  /* Custom cursor for links */
+}
+
+.navbar-brand {
+  cursor: url("assets/Bini Cursor.png"), auto;
+  /* Custom cursor for links */
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.4);
+}
+
+.nav-link:hover {
+  transform: scale(1.4);
+  /* Make the text slightly larger on hover */
+}
+
+.nav-item {
+  margin-left: 90px;
+  /* Adjust the margin as needed */
+}
+
+.nav-link.membership {
+  color: rgb(217,
+      84,
+      104) !important;
+  /* Light pink color for Exclusive Membership */
+  cursor: url("assets/Bini Cursor.png"), auto;
+  /* Custom cursor for membership link */
+}
+
+.nav-link img {
+  height: 32px;
+  /* Adjust the size of the SVG icons */
+  width: auto;
+  /* Maintain aspect ratio */
+}
+
+.nav-link img:hover {
+  transform: scale(1.4);
+}
+
+section h2 {
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-carousel {
+  flex: 1;
+}
+
+.about-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-details h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-details .member-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.about-details .member-highlight {
+  color: #e81256;
+  /* Adjust the color as necessary */
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  /* Adjust this value to align with BINI */
+}
+
+.about-details p {
+  font-size: 1.5rem;
+  /* Adjust the size as necessary */
+}
+
+.about-selector {
+  flex: 0.5;
+  padding: 20px;
+}
+
+.about-selector .list-group-item {
+  cursor: pointer;
+}
+
+.about-selector .list-group-item.active {
+  background-color: #00aaff;
+  /* Adjust the color as necessary */
+  color: white;
+}
+
+.about-selector .list-group-item:hover {
+  background-color: #005f7f;
+  /* Adjust the color as necessary */
+  color: white;
+}
+
+/* Custom cursor for specific elements */
+.details-link:hover,
+.form-check-input:hover,
+.btn-primary.mt-3:hover {
+  cursor: url("assets/Bini Cursor.png"), auto;
+  /* Custom cursor */
+}
+
+.btn-primary.mt-3:hover {
+  background-color: #c74355;
+  border-color: #c74355;
+  transform: scale(1.1);
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+#player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.78vh;
+  pointer-events: none;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+  border-radius: 8px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.btn-primary {
+  width: 100%;
+  height: auto;
+  background-color: #d95468;
+  border-color: #d95468;
+}
+
+.btn-primary:hover {
+  background-color: #c74355;
+  border-color: #c74355;
+  transform: scale(1.1);
+}
+
+.table {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table th {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#discography .carousel-item img {
+  max-width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 71%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.details-link {
+  text-decoration: underline;
+  color: #007bff;
+  font-weight: bold;
+  transition: transform 0.3s;
+  cursor: url("assets/Bini Cursor.png"), auto;
+}
+
+.details-link:hover {
+  transform: scale(1.1);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 80%;
+  margin: 0 auto;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-check-input {
+  cursor: url("assets/Bini Cursor.png"), auto;
+}
+
+.btn-primary.mt-3 {
+  cursor: url("assets/Bini Cursor.png"), auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-img:focus {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.details-link:hover,
+.form-check-input:hover,
+.btn-primary.mt-3:hover {
+  cursor: url("assets/Bini Cursor.png"), auto;
+}
+
+.btn-primary.mt-3:hover {
+  background-color: #c74355;
+  border-color: #c74355;
+  transform: scale(1.1);
+}
