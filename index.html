@@ -173,40 +173,43 @@
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active" data-member="Aiah">
+              <div class="carousel-item active">
                 <img
-                  src="assets/Aiah.jpg"
+                  src="assets/Group Photo.jpg"
                   class="d-block w-100"
-                  alt="AIAH"
+                  alt="Group Picture"
                 />
               </div>
-              <div class="carousel-item" data-member="Colet">
+              <div class="carousel-item">
+                <img src="assets/Aiah.jpg" class="d-block w-100" alt="AIAH" />
+              </div>
+              <div class="carousel-item">
                 <img src="assets/Colet.jpg" class="d-block w-100" alt="COLET" />
               </div>
-              <div class="carousel-item" data-member="Gwen">
+              <div class="carousel-item">
                 <img src="assets/Gwen.jpg" class="d-block w-100" alt="GWEN" />
               </div>
-              <div class="carousel-item" data-member="Maloi">
+              <div class="carousel-item">
                 <img src="assets/Maloi.jpg" class="d-block w-100" alt="MALOI" />
               </div>
-              <div class="carousel-item" data-member="Jhoanna">
+              <div class="carousel-item">
                 <img
                   src="assets/Jhoanna.jpg"
                   class="d-block w-100"
                   alt="JHOANNA"
                 />
               </div>
-              <div class="carousel-item" data-member="Mikha">
+              <div class="carousel-item">
                 <img src="assets/Mikha.jpg" class="d-block w-100" alt="MIKHA" />
               </div>
-              <div class="carousel-item" data-member="Sheena">
+              <div class="carousel-item">
                 <img
                   src="assets/Sheena.jpg"
                   class="d-block w-100"
                   alt="SHEENA"
                 />
               </div>
-              <div class="carousel-item" data-member="Stacey">
+              <div class="carousel-item">
                 <img
                   src="assets/Stacey.jpg"
                   class="d-block w-100"
@@ -242,20 +245,32 @@
         </div>
         <div class="about-details col-md-6">
           <h3 class="member-name">ABOUT</h3>
-          <p id="member-info">
-            <!-- Member information will be displayed here -->
+          <p>
+            Filipino pop phenomenon BINI features 8 multi-talented members,
+            Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, and Sheena. The
+            girls have quickly become the biggest female Filipino artist in
+            history, and second biggest artist overall in the Philippines,
+            holding both the #1 & #2 spots on the top Filipino music charts
+            simultaneously with the hits “Salamin, Salamin” and “Pantropiko.”
+            BINI's sound is shaped by homegrown artists and global sensations
+            alike. On the heels of their unprecedented growth in socials and in
+            streaming listenership (30M +), the girls recently sold out their
+            “BINIverse” tour in record-breaking time, and have been heralded as
+            one of Teen Vogue's 2024 Girl Groups to watch!
           </p>
+          <!-- Add more details as necessary -->
         </div>
         <div class="about-selector">
           <ul class="list-group">
-            <li class="list-group-item active" onclick="showMemberInfo('Aiah')">AIAH</li>
-            <li class="list-group-item" onclick="showMemberInfo('Colet')">COLET</li>
-            <li class="list-group-item" onclick="showMemberInfo('Gwen')">GWEN</li>
-            <li class="list-group-item" onclick="showMemberInfo('Maloi')">MALOI</li>
-            <li class="list-group-item" onclick="showMemberInfo('Jhoanna')">JHOANNA</li>
-            <li class="list-group-item" onclick="showMemberInfo('Mikha')">MIKHA</li>
-            <li class="list-group-item" onclick="showMemberInfo('Sheena')">SHEENA</li>
-            <li class="list-group-item" onclick="showMemberInfo('Stacey')">STACEY</li>
+            <li class="list-group-item active">ABOUT</li>
+            <li class="list-group-item">AIAH</li>
+            <li class="list-group-item">COLET</li>
+            <li class="list-group-item">GWEN</li>
+            <li class="list-group-item">MALOI</li>
+            <li class="list-group-item">JHOANNA</li>
+            <li class="list-group-item">MIKHA</li>
+            <li class="list-group-item">SHEENA</li>
+            <li class="list-group-item">STACEY</li>
           </ul>
         </div>
       </div>
@@ -331,7 +346,7 @@
     <!-- Videos Section -->
     <section id="videos" class="container mt-5">
       <h2>Videos</h2>
-      <div id="videosCarousel" class="carousel slide">
+      <div id="videosCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="video-container">
@@ -447,7 +462,7 @@
             <div class="video-container">
               <iframe
                 id="video10"
-                src="https://www.youtube.com/embed/wufUX5P2Ds8?si=ig_-tE5yAhBB72Wg"
+                src="https://youtu.be/wufUX5P2Ds8?si=7lysbfiXmH16iptw"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -877,32 +892,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
-    <script>
-      function showMemberInfo(member) {
-        const memberInfo = {
-          Aiah: "Aiah is a talented singer known for her powerful vocals.",
-          Colet: "Colet is recognized for her amazing dance skills.",
-          Gwen: "Gwen brings a unique style and energy to the group.",
-          Maloi: "Maloi is known for her songwriting abilities.",
-          Jhoanna: "Jhoanna captivates audiences with her stage presence.",
-          Mikha: "Mikha is a versatile performer with a passion for music.",
-          Sheena: "Sheena is loved for her charming personality.",
-          Stacey: "Stacey is known for her creativity and artistic flair."
-        };
-
-        // Update the member information display
-        document.getElementById('member-info').innerText = memberInfo[member];
-        
-        // Update the carousel to show the corresponding member's image
-        const carouselItems = document.querySelectorAll('.carousel-item');
-        carouselItems.forEach(item => {
-          if (item.getAttribute('data-member') === member) {
-            item.classList.add('active');
-          } else {
-            item.classList.remove('active');
-          }
-        });
-      }
-    </script>
   </body>
 </html>
