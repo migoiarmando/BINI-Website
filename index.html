@@ -1,501 +1,896 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINI Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/binicon-main.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BINI Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="styles.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="assets/binicon-main.png" />
-</head>
-
-<body>
-  <!-- Background Video -->
-  <div id="video-background">
-    <video autoplay muted loop id="background-video">
-      <source src="assets/background.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#" id="biniLogo">
-        <img src="assets/Bini Logo.png" alt="BINI Logo" style="height: 40px" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about" id="profileLink">PROFILE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#discography" id="musicLink">MUSIC</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#videos" id="videosLink">VIDEOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery" id="galleryLink">GALLERY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#shop" id="shopLink">SHOP</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#events" id="eventsLink">EVENTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#subscribe" id="subscribeLink">SUBSCRIBE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link membership" href="https://fandom.abs-cbn.com/bini" target="_blank">EXCLUSIVE
-              MEMBERSHIP</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav svg-group">
-          <li class="nav-item-svg">
-            <a class="nav-link" href="https://www.facebook.com/BINIph.official" target="_blank">
-              <img src="assets/Facebook Icon.svg" alt="Facebook" style="height: 24px" />
-            </a>
-          </li>
-          <li class="nav-item-svg">
-            <a class="nav-link" href="https://www.instagram.com/bini_ph/?hl=en" target="_blank">
-              <img src="assets/Instagram Icon.svg" alt="Instagram" style="height: 24px" />
-            </a>
-          </li>
-          <li class="nav-item-svg">
-            <a class="nav-link" href="https://open.spotify.com/artist/7tNO3vJC9zlHy2IJOx34ga" target="_blank">
-              <img src="assets/Spotify Icon.svg" alt="Spotify" style="height: 24px" />
-            </a>
-          </li>
-          <li class="nav-item-svg">
-            <a class="nav-link" href="https://www.tiktok.com/@bini_ph?lang=en" target="_blank">
-              <img src="assets/Tiktok Icon.svg" alt="Tiktok" style="height: 24px" />
-            </a>
-          </li>
-          <li class="nav-item-svg">
-            <a class="nav-link" href="https://x.com/BINI_ph?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              target="_blank">
-              <img src="assets/X Icon.svg" alt="X" style="height: 24px" />
-            </a>
-          </li>
-          <li class="nav-item-svg">
-            <a class="nav-link" href="https://www.youtube.com/channel/UCtOcDBKgyr-f50SgbMErFkQ" target="_blank">
-              <img src="assets/Youtube Icon.svg" alt="YouTube" style="height: 24px" />
-            </a>
-          </li>
-        </ul>
-      </div>
+  <body>
+    <!-- Background Video -->
+    <div id="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="assets/background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
-  </nav>
 
-  <!-- About Section -->
-  <section id="about" class="container mt-5">
-    <h2>About</h2>
-    <div class="about-container row">
-      <div class="about-carousel col-md-6">
-        <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/Group Photo.jpg" class="d-block w-100" alt="Group Picture" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Aiah.jpg" class="d-block w-100" alt="AIAH" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Colet.jpg" class="d-block w-100" alt="COLET" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Gwen.jpg" class="d-block w-100" alt="GWEN" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Maloi.jpg" class="d-block w-100" alt="MALOI" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Jhoanna.jpg" class="d-block w-100" alt="JHOANNA" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Mikha.jpg" class="d-block w-100" alt="MIKHA" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Sheena.jpg" class="d-block w-100" alt="SHEENA" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/Stacey.jpg" class="d-block w-100" alt="STACEY" />
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="about-details col-md-6">
-        <h3 class="member-name">ABOUT</h3>
-        <p>
-          Filipino pop phenomenon BINI features 8 multi-talented members,
-          Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, and Sheena. The
-          girls have quickly become the biggest female Filipino artist in
-          history, and second biggest artist overall in the Philippines,
-          holding both the #1 & #2 spots on the top Filipino music charts
-          simultaneously with the hits “Salamin, Salamin” and “Pantropiko.”
-          BINI's sound is shaped by homegrown artists and global sensations
-          alike. On the heels of their unprecedented growth in socials and in
-          streaming listenership (30M +), the girls recently sold out their
-          “BINIverse” tour in record-breaking time, and have been heralded as
-          one of Teen Vogue's 2024 Girl Groups to watch!
-        </p>
-        <!-- Add more details as necessary -->
-      </div>
-      <div class="about-selector">
-        <ul class="list-group">
-          <li class="list-group-item active">ABOUT</li>
-          <li class="list-group-item">AIAH</li>
-          <li class="list-group-item">COLET</li>
-          <li class="list-group-item">GWEN</li>
-          <li class="list-group-item">MALOI</li>
-          <li class="list-group-item">JHOANNA</li>
-          <li class="list-group-item">MIKHA</li>
-          <li class="list-group-item">SHEENA</li>
-          <li class="list-group-item">STACEY</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Discography Section -->
-  <section id="discography" class="container mt-5">
-    <h2>Discography</h2>
-    <div id="discographyCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="https://open.spotify.com/album/0pmaK0PxEEJyNeJ0Z5lubi?si=-TXwcSaaTSCgMfJ7edc3zA" target="_blank">
-            <img src="assets/Gandang Vitakeratin.png" class="d-block w-100" alt="Gandang Vitakeratin" />
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="https://open.spotify.com/album/3NYOeU6Uwj2FP1Zz1rWVz8?si=rq1CKsVRR7Ck3tKtxBsi1Q" target="_blank">
-            <img src="assets/Pantropiko.jpg" class="d-block w-100" alt="Pantropiko" />
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="https://open.spotify.com/album/2eT1XApzS0GmkJLMlCBdVv?si=4aTalEMIT6yWnGKYSw1-Cw" target="_blank">
-            <img src="assets/Talaarawan.jpeg" class="d-block w-100" alt="Talaarawan" />
-          </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="biniLogo">
+          <img
+            src="assets/Bini Logo.png"
+            alt="BINI Logo"
+            style="height: 40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="profileLink">PROFILE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#discography" id="musicLink">MUSIC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos" id="videosLink">VIDEOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery" id="galleryLink">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop" id="shopLink">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events" id="eventsLink">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#subscribe" id="subscribeLink"
+                >SUBSCRIBE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link membership"
+                href="https://fandom.abs-cbn.com/bini"
+                target="_blank"
+                >EXCLUSIVE MEMBERSHIP</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav svg-group">
+            <li class="nav-item-svg">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/BINIph.official"
+                target="_blank"
+              >
+                <img
+                  src="assets/Facebook Icon.svg"
+                  alt="Facebook"
+                  style="height: 24px"
+                />
+              </a>
+            </li>
+            <li class="nav-item-svg">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/bini_ph/?hl=en"
+                target="_blank"
+              >
+                <img
+                  src="assets/Instagram Icon.svg"
+                  alt="Instagram"
+                  style="height: 24px"
+                />
+              </a>
+            </li>
+            <li class="nav-item-svg">
+              <a
+                class="nav-link"
+                href="https://open.spotify.com/artist/7tNO3vJC9zlHy2IJOx34ga"
+                target="_blank"
+              >
+                <img
+                  src="assets/Spotify Icon.svg"
+                  alt="Spotify"
+                  style="height: 24px"
+                />
+              </a>
+            </li>
+            <li class="nav-item-svg">
+              <a
+                class="nav-link"
+                href="https://www.tiktok.com/@bini_ph?lang=en"
+                target="_blank"
+              >
+                <img
+                  src="assets/Tiktok Icon.svg"
+                  alt="Tiktok"
+                  style="height: 24px"
+                />
+              </a>
+            </li>
+            <li class="nav-item-svg">
+              <a
+                class="nav-link"
+                href="https://x.com/BINI_ph?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"
+              >
+                <img src="assets/X Icon.svg" alt="X" style="height: 24px" />
+              </a>
+            </li>
+            <li class="nav-item-svg">
+              <a
+                class="nav-link"
+                href="https://www.youtube.com/channel/UCtOcDBKgyr-f50SgbMErFkQ"
+                target="_blank"
+              >
+                <img
+                  src="assets/Youtube Icon.svg"
+                  alt="YouTube"
+                  style="height: 24px"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#discographyCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#discographyCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Videos Section -->
-  <section id="videos" class="container mt-5">
-    <h2>Videos</h2>
-    <div id="videosCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="video-container">
-            <iframe id="video1" src="https://www.youtube.com/embed/Zx31bB2vMns?enablejsapi=1" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video2" src="https://www.youtube.com/embed/J1Ip2sC_lss?si=ncfqKnT9jqJG-eQZ" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video3" src="https://www.youtube.com/embed/QNV2DmBxChQ?si=NGcWBlH8TYnhx-t3" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video4" src="https://www.youtube.com/embed/KyndoXN4_ns?si=bgxCuoAr5p5TBYuQ" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video5" src="https://www.youtube.com/embed/wJ6GCeSR4ss?si=bhHvhQegadQ4eDxP" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video6" src="https://www.youtube.com/embed/UMogVGvhs7U?si=vP6pAPSexdsArUvT" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video7" src="https://www.youtube.com/embed/wyxmSOidPzA?si=zjdVk-vfTiTU0KWy" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video8" src="https://www.youtube.com/embed/cUMH4XhQTGI?si=l6tce7gQ6NzTXtfV" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video9" src="https://www.youtube.com/embed/OGBS-8IsPJ0?si=Bu1-rTYCxy_cG30x" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe id="video10" src="https://www.youtube.com/embed/beaF9FnJ1IA?si=4aGsgPoYL5ILx27l" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#videosCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#videosCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="text-center mt-3">
-      <a href="https://www.youtube.com/channel/UCtOcDBKgyr-f50SgbMErFkQ" target="_blank"
-        class="btn btn-primary mt-3">More Videos</a>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery" class="container mt-5">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="assets/1.jpg" class="gallery-img" alt="Gallery 1" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="0" />
-      <img src="assets/2.jpg" class="gallery-img" alt="Gallery 2" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="1" />
-      <img src="assets/3.jpg" class="gallery-img" alt="Gallery 3" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="2" />
-      <img src="assets/4.jpg" class="gallery-img" alt="Gallery 4" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="3" />
-      <img src="assets/5.jpg" class="gallery-img" alt="Gallery 5" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="4" />
-      <img src="assets/6.jpg" class="gallery-img" alt="Gallery 6" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="5" />
-      <img src="assets/7.jpg" class="gallery-img" alt="Gallery 7" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="6" />
-      <img src="assets/8.jpg" class="gallery-img" alt="Gallery 8" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="7" />
-      <img src="assets/9.jpg" class="gallery-img" alt="Gallery 9" data-bs-toggle="modal" data-bs-target="#galleryModal"
-        data-bs-slide-to="8" />
-      <img src="assets/10.jpg" class="gallery-img" alt="Gallery 10" data-bs-toggle="modal"
-        data-bs-target="#galleryModal" data-bs-slide-to="9" />
-      <img src="assets/11.jpg" class="gallery-img" alt="Gallery 11" data-bs-toggle="modal"
-        data-bs-target="#galleryModal" data-bs-slide-to="10" />
-      <img src="assets/12.jpg" class="gallery-img" alt="Gallery 12" data-bs-toggle="modal"
-        data-bs-target="#galleryModal" data-bs-slide-to="11" />
-    </div>
-  </section>
-
-  <!-- Modal for full view -->
-  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="galleryModalLabel">BINI Gallery</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+      <h2>About</h2>
+      <div class="about-container row">
+        <div class="about-carousel col-md-6">
+          <div
+            id="aboutCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/1.jpg" class="d-block w-100" alt="Gallery 1" />
+                <img
+                  src="assets/Group Photo.jpg"
+                  class="d-block w-100"
+                  alt="Group Picture"
+                />
               </div>
               <div class="carousel-item">
-                <img src="assets/2.jpg" class="d-block w-100" alt="Gallery 2" />
+                <img src="assets/Aiah.jpg" class="d-block w-100" alt="AIAH" />
               </div>
               <div class="carousel-item">
-                <img src="assets/3.jpg" class="d-block w-100" alt="Gallery 3" />
+                <img src="assets/Colet.jpg" class="d-block w-100" alt="COLET" />
               </div>
               <div class="carousel-item">
-                <img src="assets/4.jpg" class="d-block w-100" alt="Gallery 4" />
+                <img src="assets/Gwen.jpg" class="d-block w-100" alt="GWEN" />
               </div>
               <div class="carousel-item">
-                <img src="assets/5.jpg" class="d-block w-100" alt="Gallery 5" />
+                <img src="assets/Maloi.jpg" class="d-block w-100" alt="MALOI" />
               </div>
               <div class="carousel-item">
-                <img src="assets/6.jpg" class="d-block w-100" alt="Gallery 6" />
+                <img
+                  src="assets/Jhoanna.jpg"
+                  class="d-block w-100"
+                  alt="JHOANNA"
+                />
               </div>
               <div class="carousel-item">
-                <img src="assets/7.jpg" class="d-block w-100" alt="Gallery 7" />
+                <img src="assets/Mikha.jpg" class="d-block w-100" alt="MIKHA" />
               </div>
               <div class="carousel-item">
-                <img src="assets/8.jpg" class="d-block w-100" alt="Gallery 8" />
+                <img
+                  src="assets/Sheena.jpg"
+                  class="d-block w-100"
+                  alt="SHEENA"
+                />
               </div>
               <div class="carousel-item">
-                <img src="assets/9.jpg" class="d-block w-100" alt="Gallery 9" />
-              </div>
-              <div class="carousel-item">
-                <img src="assets/10.jpg" class="d-block w-100" alt="Gallery 10" />
-              </div>
-              <div class="carousel-item">
-                <img src="assets/11.jpg" class="d-block w-100" alt="Gallery 11" />
-              </div>
-              <div class="carousel-item">
-                <img src="assets/12.jpg" class="d-block w-100" alt="Gallery 12" />
+                <img
+                  src="assets/Stacey.jpg"
+                  class="d-block w-100"
+                  alt="STACEY"
+                />
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
+        <div class="about-details col-md-6">
+          <h3 class="member-name">ABOUT</h3>
+          <p>
+            Filipino pop phenomenon BINI features 8 multi-talented members,
+            Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, and Sheena. The
+            girls have quickly become the biggest female Filipino artist in
+            history, and second biggest artist overall in the Philippines,
+            holding both the #1 & #2 spots on the top Filipino music charts
+            simultaneously with the hits “Salamin, Salamin” and “Pantropiko.”
+            BINI's sound is shaped by homegrown artists and global sensations
+            alike. On the heels of their unprecedented growth in socials and in
+            streaming listenership (30M +), the girls recently sold out their
+            “BINIverse” tour in record-breaking time, and have been heralded as
+            one of Teen Vogue's 2024 Girl Groups to watch!
+          </p>
+          <!-- Add more details as necessary -->
+        </div>
+        <div class="about-selector">
+          <ul class="list-group">
+            <li class="list-group-item active">ABOUT</li>
+            <li class="list-group-item">AIAH</li>
+            <li class="list-group-item">COLET</li>
+            <li class="list-group-item">GWEN</li>
+            <li class="list-group-item">MALOI</li>
+            <li class="list-group-item">JHOANNA</li>
+            <li class="list-group-item">MIKHA</li>
+            <li class="list-group-item">SHEENA</li>
+            <li class="list-group-item">STACEY</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discography Section -->
+    <section id="discography" class="container mt-5">
+      <h2>Discography</h2>
+      <div
+        id="discographyCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://open.spotify.com/album/0pmaK0PxEEJyNeJ0Z5lubi?si=-TXwcSaaTSCgMfJ7edc3zA"
+              target="_blank"
+            >
+              <img
+                src="assets/Gandang Vitakeratin.png"
+                class="d-block w-100"
+                alt="Gandang Vitakeratin"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/album/3NYOeU6Uwj2FP1Zz1rWVz8?si=rq1CKsVRR7Ck3tKtxBsi1Q"
+              target="_blank"
+            >
+              <img
+                src="assets/Pantropiko.jpg"
+                class="d-block w-100"
+                alt="Pantropiko"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/album/2eT1XApzS0GmkJLMlCBdVv?si=4aTalEMIT6yWnGKYSw1-Cw"
+              target="_blank"
+            >
+              <img
+                src="assets/Talaarawan.jpeg"
+                class="d-block w-100"
+                alt="Talaarawan"
+              />
+            </a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#discographyCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#discographyCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="container mt-5">
+      <h2>Videos</h2>
+      <div id="videosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="video-container">
+              <iframe
+                id="video1"
+                src="https://www.youtube.com/embed/Zx31bB2vMns?enablejsapi=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video2"
+                src="https://www.youtube.com/embed/J1Ip2sC_lss?si=ncfqKnT9jqJG-eQZ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video3"
+                src="https://www.youtube.com/embed/QNV2DmBxChQ?si=NGcWBlH8TYnhx-t3"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video4"
+                src="https://www.youtube.com/embed/KyndoXN4_ns?si=bgxCuoAr5p5TBYuQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video5"
+                src="https://www.youtube.com/embed/wJ6GCeSR4ss?si=bhHvhQegadQ4eDxP"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video6"
+                src="https://www.youtube.com/embed/UMogVGvhs7U?si=vP6pAPSexdsArUvT"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video7"
+                src="https://www.youtube.com/embed/wyxmSOidPzA?si=zjdVk-vfTiTU0KWy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video8"
+                src="https://www.youtube.com/embed/cUMH4XhQTGI?si=l6tce7gQ6NzTXtfV"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video9"
+                src="https://www.youtube.com/embed/OGBS-8IsPJ0?si=Bu1-rTYCxy_cG30x"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video10"
+                src="https://www.youtube.com/embed/beaF9FnJ1IA?si=4aGsgPoYL5ILx27l"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe
+                id="video10"
+                src="https://www.youtube.com/watch?v=wufUX5P2Ds8"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#videosCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#videosCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="text-center mt-3">
+        <a
+          href="https://www.youtube.com/channel/UCtOcDBKgyr-f50SgbMErFkQ"
+          target="_blank"
+          class="btn btn-primary mt-3"
+          >More Videos</a
+        >
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mt-5">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img
+          src="assets/1.jpg"
+          class="gallery-img"
+          alt="Gallery 1"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="0"
+        />
+        <img
+          src="assets/2.jpg"
+          class="gallery-img"
+          alt="Gallery 2"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="1"
+        />
+        <img
+          src="assets/3.jpg"
+          class="gallery-img"
+          alt="Gallery 3"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="2"
+        />
+        <img
+          src="assets/4.jpg"
+          class="gallery-img"
+          alt="Gallery 4"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="3"
+        />
+        <img
+          src="assets/5.jpg"
+          class="gallery-img"
+          alt="Gallery 5"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="4"
+        />
+        <img
+          src="assets/6.jpg"
+          class="gallery-img"
+          alt="Gallery 6"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="5"
+        />
+        <img
+          src="assets/7.jpg"
+          class="gallery-img"
+          alt="Gallery 7"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="6"
+        />
+        <img
+          src="assets/8.jpg"
+          class="gallery-img"
+          alt="Gallery 8"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="7"
+        />
+        <img
+          src="assets/9.jpg"
+          class="gallery-img"
+          alt="Gallery 9"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="8"
+        />
+        <img
+          src="assets/10.jpg"
+          class="gallery-img"
+          alt="Gallery 10"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="9"
+        />
+        <img
+          src="assets/11.jpg"
+          class="gallery-img"
+          alt="Gallery 11"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="10"
+        />
+        <img
+          src="assets/12.jpg"
+          class="gallery-img"
+          alt="Gallery 12"
+          data-bs-toggle="modal"
+          data-bs-target="#galleryModal"
+          data-bs-slide-to="11"
+        />
+      </div>
+    </section>
+
+    <!-- Modal for full view -->
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="galleryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModalLabel">BINI Gallery</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="galleryCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/1.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/2.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/3.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/4.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/5.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/6.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 6"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/7.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 7"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/8.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 8"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/9.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 9"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/10.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 10"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/11.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 11"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/12.jpg"
+                    class="d-block w-100"
+                    alt="Gallery 12"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#galleryCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Shop Section -->
-  <section id="shop" class="container mt-5">
-    <h2>Shop</h2>
-    <img src="assets/Bini Merch.jpg" class="d-block w-100" alt="Shop" />
-    <a href="https://fandom.abs-cbn.com/bini" class="btn btn-primary mt-3" target="_blank">Be an Exclusive Member</a>
-  </section>
+    <!-- Shop Section -->
+    <section id="shop" class="container mt-5">
+      <h2>Shop</h2>
+      <img src="assets/Bini Merch.jpg" class="d-block w-100" alt="Shop" />
+      <a
+        href="https://fandom.abs-cbn.com/bini"
+        class="btn btn-primary mt-3"
+        target="_blank"
+        >Be an Exclusive Member</a
+      >
+    </section>
 
-  <!-- Events Section -->
-  <section id="events" class="container mt-5">
-    <h2>Events</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Date</th>
-          <th scope="col">Event</th>
-          <th scope="col">Location</th>
-          <th scope="col">Details</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>June 11</td>
-          <td>Happy BINI day</td>
-          <td>One Ayala, Makati</td>
-          <td>
-            <a href="https://www.facebook.com/photo/?fbid=831316958870405&set=a.108497734485668" class="details-link"
-              target="_blank">See Details</a>
-          </td>
-        </tr>
-        <tr>
-          <td>June 12</td>
-          <td>Musikalayaan</td>
-          <td>Burnham Green</td>
-          <td>
-            <a href="https://www.facebook.com/photo/?fbid=866660485486679&set=a.228156996003701" class="details-link"
-              target="_blank">See Details</a>
-          </td>
-        </tr>
-        <tr>
-          <td>June 15</td>
-          <td>Ang Pinaka</td>
-          <td>Sampaloc Cor Mayapis Street</td>
-          <td>
-            <a href="https://www.facebook.com/photo.php?fbid=122151489524129293&set=a.122151868670129293&type=3&ref=embed_post"
-              class="details-link" target="_blank">See Details</a>
-          </td>
-        </tr>
-        <tr>
-          <td>June 22</td>
-          <td>Love Laban 2 Everyone</td>
-          <td>Quezon Memorial Circle</td>
-          <td>
-            <a href="https://www.facebook.com/photo/?fbid=432194852910649&set=pcb.432196279577173" class="details-link"
-              target="_blank">See Details</a>
-          </td>
-        </tr>
-        <tr>
-          <td>June 23</td>
-          <td>BINI Run</td>
-          <td>Roxas Boulevard</td>
-          <td>
-            <a href="https://www.facebook.com/BINIph.official" class="details-link" target="_blank">See Details</a>
-          </td>
-        </tr>
-        <tr>
-          <td>June 28-30</td>
-          <td>BINIVERSE: The First Solo Concert</td>
-          <td>New Frontier Theater</td>
-          <td>
-            <a href="https://ticketnet.com.ph/event-detail/BINIverse-The-First-Solo-Concert" class="details-link"
-              target="_blank">See Details</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <!-- Events Section -->
+    <section id="events" class="container mt-5">
+      <h2>Events</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Event</th>
+            <th scope="col">Location</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>June 11</td>
+            <td>Happy BINI day</td>
+            <td>One Ayala, Makati</td>
+            <td>
+              <a
+                href="https://www.facebook.com/photo/?fbid=831316958870405&set=a.108497734485668"
+                class="details-link"
+                target="_blank"
+                >See Details</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>June 12</td>
+            <td>Musikalayaan</td>
+            <td>Burnham Green</td>
+            <td>
+              <a
+                href="https://www.facebook.com/photo/?fbid=866660485486679&set=a.228156996003701"
+                class="details-link"
+                target="_blank"
+                >See Details</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>June 15</td>
+            <td>Ang Pinaka</td>
+            <td>Sampaloc Cor Mayapis Street</td>
+            <td>
+              <a
+                href="https://www.facebook.com/photo.php?fbid=122151489524129293&set=a.122151868670129293&type=3&ref=embed_post"
+                class="details-link"
+                target="_blank"
+                >See Details</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>June 22</td>
+            <td>Love Laban 2 Everyone</td>
+            <td>Quezon Memorial Circle</td>
+            <td>
+              <a
+                href="https://www.facebook.com/photo/?fbid=432194852910649&set=pcb.432196279577173"
+                class="details-link"
+                target="_blank"
+                >See Details</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>June 23</td>
+            <td>BINI Run</td>
+            <td>Roxas Boulevard</td>
+            <td>
+              <a
+                href="https://www.facebook.com/BINIph.official"
+                class="details-link"
+                target="_blank"
+                >See Details</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>June 28-30</td>
+            <td>BINIVERSE: The First Solo Concert</td>
+            <td>New Frontier Theater</td>
+            <td>
+              <a
+                href="https://ticketnet.com.ph/event-detail/BINIverse-The-First-Solo-Concert"
+                class="details-link"
+                target="_blank"
+                >See Details</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <!-- Subscribe Section -->
-  <section id="subscribe" class="container mt-5">
-    <h2>Subscribe to Our Newsletter</h2>
-    <form>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com" />
-      </div>
-      <div class="mb-3">
-        <label for="name" class="form-label">Full Name (optional)</label>
-        <input type="text" class="form-control" id="name" placeholder="Full Name" />
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="terms" />
-        <label class="form-check-label" for="terms">I confirm that I have read and agree to the Terms and
-          Conditions</label>
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="privacy" />
-        <label class="form-check-label" for="privacy">I confirm that I have read and agree to the Privacy Policy</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign Up</button>
-    </form>
-  </section>
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="container mt-5">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name (optional)</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Full Name"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms" />
+          <label class="form-check-label" for="terms"
+            >I confirm that I have read and agree to the Terms and
+            Conditions</label
+          >
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="privacy" />
+          <label class="form-check-label" for="privacy"
+            >I confirm that I have read and agree to the Privacy Policy</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
