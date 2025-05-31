@@ -15,7 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/png" href="assets/binicon-main.png" />
+
+    <!-- Add Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -164,7 +174,7 @@
 
     <!-- About Section -->
     <section id="about" class="container mt-5">
-      <h2>About</h2>
+      <h2>ABOUT</h2>
       <div class="about-container row">
         <div class="about-carousel col-md-6">
           <div
@@ -244,33 +254,87 @@
           </div>
         </div>
         <div class="about-details col-md-6">
-          <h3 class="member-name">ABOUT</h3>
+          <h3 class="member-name"></h3>
           <p>
             Filipino pop phenomenon BINI features 8 multi-talented members,
             Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, and Sheena. The
             girls have quickly become the biggest female Filipino artist in
             history, and second biggest artist overall in the Philippines,
             holding both the #1 & #2 spots on the top Filipino music charts
-            simultaneously with the hits “Salamin, Salamin” and “Pantropiko.”
+            simultaneously with the hits "Salamin, Salamin" and "Pantropiko."
             BINI's sound is shaped by homegrown artists and global sensations
             alike. On the heels of their unprecedented growth in socials and in
             streaming listenership (30M +), the girls recently sold out their
-            “BINIverse” tour in record-breaking time, and have been heralded as
+            "BINIverse" tour in record-breaking time, and have been heralded as
             one of Teen Vogue's 2024 Girl Groups to watch!
           </p>
           <!-- Add more details as necessary -->
         </div>
         <div class="about-selector">
           <ul class="list-group">
-            <li class="list-group-item active">ABOUT</li>
-            <li class="list-group-item">AIAH</li>
-            <li class="list-group-item">COLET</li>
-            <li class="list-group-item">GWEN</li>
-            <li class="list-group-item">MALOI</li>
-            <li class="list-group-item">JHOANNA</li>
-            <li class="list-group-item">MIKHA</li>
-            <li class="list-group-item">SHEENA</li>
-            <li class="list-group-item">STACEY</li>
+            <li
+              class="list-group-item active"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="0"
+            >
+              ABOUT
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="1"
+            >
+              AIAH
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="2"
+            >
+              COLET
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="3"
+            >
+              GWEN
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="4"
+            >
+              MALOI
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="5"
+            >
+              JHOANNA
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="6"
+            >
+              MIKHA
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="7"
+            >
+              SHEENA
+            </li>
+            <li
+              class="list-group-item"
+              data-bs-target="#aboutCarousel"
+              data-bs-slide-to="8"
+            >
+              STACEY
+            </li>
           </ul>
         </div>
       </div>
@@ -278,74 +342,67 @@
 
     <!-- Discography Section -->
     <section id="discography" class="container mt-5">
-      <h2>Discography</h2>
-      <div
-        id="discographyCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <h2 class="text-center">Discography</h2>
+      <!-- Swiper -->
+      <div class="swiper discography-swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
             <a
               href="https://open.spotify.com/album/0pmaK0PxEEJyNeJ0Z5lubi?si=-TXwcSaaTSCgMfJ7edc3zA"
               target="_blank"
             >
               <img
                 src="assets/Gandang Vitakeratin.png"
-                class="d-block w-100"
                 alt="Gandang Vitakeratin"
               />
+              <button class="stream-now-btn">Stream Now</button>
             </a>
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <a
               href="https://open.spotify.com/album/3NYOeU6Uwj2FP1Zz1rWVz8?si=rq1CKsVRR7Ck3tKtxBsi1Q"
               target="_blank"
             >
-              <img
-                src="assets/Pantropiko.jpg"
-                class="d-block w-100"
-                alt="Pantropiko"
-              />
+              <img src="assets/Pantropiko.jpg" alt="Pantropiko" />
+              <button class="stream-now-btn">Stream Now</button>
             </a>
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <a
               href="https://open.spotify.com/album/2eT1XApzS0GmkJLMlCBdVv?si=4aTalEMIT6yWnGKYSw1-Cw"
               target="_blank"
             >
-              <img
-                src="assets/Talaarawan.jpeg"
-                class="d-block w-100"
-                alt="Talaarawan"
-              />
+              <img src="assets/Talaarawan.jpeg" alt="Talaarawan" />
+              <button class="stream-now-btn">Stream Now</button>
             </a>
           </div>
+          <!-- Add more swiper-slide for other albums -->
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#discographyCarousel"
-          data-bs-slide="prev"
+        <!-- Add Pagination if needed -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- Add Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Add Scrollbar if needed -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <!-- Album details and More Music button remain below the swiper -->
+      <div class="text-center mt-3 discography-details">
+        <h3 class="album-title"></h3>
+        <p class="album-info"></p>
+        <a href="#" class="btn btn-primary mt-3 more-music-btn" target="_blank"
+          >More Music</a
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#discographyCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
     <!-- Videos Section -->
     <section id="videos" class="container mt-5">
-      <h2>Videos</h2>
+      <h2>VIDEOS</h2>
       <div id="videosCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -501,7 +558,7 @@
 
     <!-- Gallery Section -->
     <section id="gallery" class="container mt-5">
-      <h2>Gallery</h2>
+      <h2>GALLERY</h2>
       <div class="gallery-grid">
         <img
           src="assets/1.jpg"
@@ -745,7 +802,7 @@
 
     <!-- Shop Section -->
     <section id="shop" class="container mt-5">
-      <h2>Shop</h2>
+      <h2>SHOP</h2>
       <img src="assets/Bini Merch.jpg" class="d-block w-100" alt="Shop" />
       <a
         href="https://fandom.abs-cbn.com/bini"
@@ -757,7 +814,7 @@
 
     <!-- Events Section -->
     <section id="events" class="container mt-5">
-      <h2>Events</h2>
+      <h2>EVENTS</h2>
       <table class="table">
         <thead>
           <tr>
@@ -852,7 +909,7 @@
 
     <!-- Subscribe Section -->
     <section id="subscribe" class="container mt-5">
-      <h2>Subscribe to Our Newsletter</h2>
+      <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
       <form>
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
@@ -891,6 +948,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- Add Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

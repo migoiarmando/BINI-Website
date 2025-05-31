@@ -62,9 +62,7 @@ body {
 }
 
 .nav-link.membership {
-  color: rgb(217,
-      84,
-      104) !important;
+  color: rgb(217, 84, 104) !important;
   /* Light pink color for Exclusive Membership */
   cursor: url("assets/Bini Cursor.png"), auto;
   /* Custom cursor for membership link */
@@ -354,4 +352,114 @@ section {
   background-color: #c74355;
   border-color: #c74355;
   transform: scale(1.1);
+}
+
+/* Style for the Discography title */
+#discography h2 {
+  font-family: "Spicy Rice", cursive; /* Apply Spicy Rice font */
+  color: #000; /* Assuming title color is black based on the image */
+  margin-bottom: 30px; /* Add some space below the title */
+}
+
+/* Styles for the Swiper container */
+.discography-swiper {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  padding-top: 50px; /* Add padding if using 3D effects that need space */
+  padding-bottom: 50px; /* Add padding if using 3D effects that need space */
+}
+
+/* Styles for individual Swiper slides */
+.discography-swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px; /* Adjust slide width */
+  height: 350px; /* Adjust slide height */
+  /* Center slide content if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflowing parts of the image */
+  border-radius: 10px; /* Add border radius to slides */
+  /* Ensure full opacity to remove gray tint */
+  opacity: 1 !important;
+  filter: none !important; /* Also remove any potential blur filter */
+}
+
+.discography-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the slide area */
+  border-radius: 10px; /* Apply border-radius to image */
+}
+
+/* Style for the Stream Now button within the slide */
+.discography-swiper .swiper-slide .stream-now-btn {
+  position: absolute;
+  top: 95%; /* Adjusted to move the button further down */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  color: #000; /* Black text */
+  border: none;
+  padding: 8px 18px; /* Adjust padding */
+  font-size: 0.9em; /* Adjust font size */
+  border-radius: 5px; /* Add slight border radius */
+  cursor: pointer; /* Indicate it's clickable */
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.3s ease;
+  z-index: 10; /* Ensure it's above the image */
+}
+
+/* Show Stream Now button on active slide (Swiper adds 'swiper-slide-active') */
+.discography-swiper .swiper-slide-active .stream-now-btn {
+  opacity: 1;
+}
+
+/* Style for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* White color for arrows */
+  --swiper-navigation-size: 30px; /* Adjust arrow size */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add text shadow for visibility */
+}
+
+/* Style for the discography details section */
+.discography-details {
+  margin-top: 40px; /* Add more space between swiper and details */
+}
+
+.discography-details .album-title {
+  font-family: "Lexend", sans-serif; /* Use Lexend for album title */
+  color: #000; /* Assuming title color is black */
+  margin-bottom: 5px;
+  font-weight: bold; /* Make title bold */
+}
+
+.discography-details .album-info {
+  font-family: "Lexend", sans-serif; /* Use Lexend for album info */
+  color: #555; /* Assuming info color is a darker grey */
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+/* Style for the More Music button */
+.more-music-btn {
+  background-color: #e91e63; /* Pink color from the image */
+  border-color: #e91e63; /* Match border color */
+  color: #fff; /* White text */
+  padding: 10px 30px; /* Adjust padding */
+  font-size: 1em;
+  border-radius: 20px; /* More rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure padding works */
+  transition: background-color 0.3s ease;
+}
+
+.more-music-btn:hover {
+  background-color: #d81b60; /* Darker pink on hover */
+  border-color: #d81b60;
 }
